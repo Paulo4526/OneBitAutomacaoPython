@@ -1,0 +1,2 @@
+Olá mundo! Estamos aprendendo automação em Python!
+Espero que estejam gostando por que temos muitas novidades!
