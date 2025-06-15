@@ -1,0 +1,8 @@
+Tipo,Valor,Forma_pagto
+Energia,200,Dinheiro
+Roupas,150,Cartão de Crédito
+Livros,450,Cartão de Débito
+Remédios,130,Pix
+Aluguel,850,Pix
+Alimentação,1150,Vale Alimentação
+Petshop,60,Dinheiro
