@@ -1,0 +1,31 @@
+1- Caso seja necessário crie um ambiente virtual para o projeto com o comando 'python -m venv venv'.
+2- Acesse seu novo ambiente virtual com o comando .\venv\activeted
+3- Após isso instale o Scrapy com o comando 'pip install Scrapy'
+4- Após instalado o Scrapy, criaremos nosso projeto com o comando 'scrapy startprojetct (aqui o nome do projeto de sua escolha)'
+5- Será criado um projeto no diretório onde o comando foi rodado e iniciaremos nosso projeto via código.
+6 - Instalar a biblioteca ipython para trabalhar com scrapy shell e trabalhar com python de forma iterativa, comando 'pip install ipython'
+7 - Em scrapy.cfg, introduzir a variavel shell com valor ipython, ex:'shell = ipython', e salvar
+
+
+8 - COMANDOS:
+8.1 - SCRAPY STARTPROJECT -> PARA INICIAR O PROJETO EM SCRAPY
+8.2 - SCRAPY -h -> PARA VER OS COMANDOS DO SCRAPY
+8.3 - SCRAPY GENSPIDER (aqui o nome do spider) (aqui o site que faremos o scrap) -> GERA UM SPIDER DENTRO DA PASTA SPIDERS
+8.4 - SCRAPY SHELL: ABRE O TERMINAL SCRAPY SHELL PARA FAZER OS COMANDOS:
+    OBS: É possível criar variaveis em python igual na IDE
+    8.4.1 - FETCH('URL DO SITE QUE SERÁ FEITO O SCRAP')
+    8.4.2 - RESPONSE: MOSTRA QUAL O STATUS DE RESPOSTA
+    8.4.3 - RESPONDE.CSS('TAG.CLASSE'), EX: response.css('article.product_pod') -> Aqui será mostrado os valores encontrados na tag 'article' descrita como classe 'product_pod'
+    8.4.4 - books = response.css('TAG.CLASSE') -> Para atribuir os valores à variavel book
+    8.4.5 - books[0].css('h3 a::text').get() -> Para pegar o valor do texto que é uma tag 'h3' seguida da tag 'a' na posição 1
+    8.4.6 - for book in books:
+                print(book.css('h3 a::text').get()) -> Iterando os valores de book e recebendo somente o conteúdo que está na tag 'a'
+    8.4.7 - Exit -> Para sair do terminal
+
+9 - No terminal retorne até o diretório onde o arquivo scrapy.py está, use o comando 'dir' no Windows ou 'ls' no Linux, para garantir que o arquivo está mesmo nesse diretório
+10 - Agora escreveremos nosso código no spider gerado no item 8.3, lembresse que esse arquivo deverá ser criado dentro da pasta SPIDERS
+11 - Após escrever o código e para rodar seu script digite o comando 'scrapy crawl (aqui o nome do arquivo criado)', lembrando que esse comando tem que ser digitado no terminal no mesmo diretório que o arquivo scrapy.cfg
+
+
+
+
